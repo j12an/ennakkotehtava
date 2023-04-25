@@ -1,3 +1,6 @@
+/* Tietokannan luonti */
+CREATE DATABASE mml_etukateistehtava;
+
 /*1) TUOTTEET-taulu
 1.1. Tuotteet-taulun luonti */
 
@@ -70,7 +73,7 @@ SELECT * FROM mml_etukateistehtava.tuotteet;
 /* 2) LASKUTUSTAPAHTUMAT-taulu
 2.1. Laskutustapahtuma-taulun luonti */
 
-CREATE TABLE mml_etukateistehtava.laskutustapahtumat(laskutustapahtumaID int,asiakastunnus int,tuote varchar(255),kplmaara varchar(255), pvm varchar(255));
+CREATE TABLE mml_etukateistehtava.laskutustapahtumat(laskutustapahtumaID int,asiakastunnus varchar(255),tuote varchar(255),kplmaara varchar(255), pvm varchar(255));
 
 -- 2.2. Laskutustapahtumat-taulun tietojen lisäys
 
@@ -247,7 +250,7 @@ SELECT * FROM mml_etukateistehtava.asiakkaat;
 /* 4) ASIAKASRYHMAT JA HINNOITTELU-taulu
 4.1 Asiakasryhmat ja hinnoittelu-taulun luonti */
 
-CREATE TABLE mml_etukateistehtava.asiakkaat(asiakasID int, asiakastunnus varchar(255),asiakasryhma varchar(255));
+CREATE TABLE mml_etukateistehtava.asiakasryhmat_ja_hinnoittelu(asiakasryhmat_ja_hinnoitteluID int, asiakasryhma varchar(255),yllapitomaksu varchar(255),hinnoittelu varchar(255));
 
 -- 4.2 Asiakasryhmat ja hinnoittelu-taulun tietojen lisäys
 
